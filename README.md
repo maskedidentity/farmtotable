@@ -1,4 +1,4 @@
-Farm to Table 🎯
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/337aa44c-187e-4813-95e7-a00f9b419d8a" />Farm to Table 🎯
 
 Basic Details
 
@@ -18,7 +18,7 @@ Hosted Project Link
 
 Project Description
 
-Farm to Table is a web-based platform that connects farmers directly with consumers, eliminating middlemen and ensuring fair pricing. The platform allows farmers to list their fresh produce while consumers can browse, purchase, and arrange for delivery or pickup. This enhances the farm-to-table movement, promoting sustainability and reducing food wastage.
+Farm-To-Table is a web-based platform that connects farmers directly with consumers, eliminating middlemen and ensuring fair pricing. The platform allows farmers to list their fresh produce while consumers can browse, purchase, and arrange for delivery or pickup. This enhances the farm-to-table movement, promoting sustainability and reducing food wastage.
 
 The Problem Statement
 
@@ -68,25 +68,18 @@ npm start
 
 Project Documentation
 
-For Software:
+Screenshots
 
-Screenshots (Add at least 3)
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/c03f3f5e-720f-424d-a3ce-b193fea9a6fd" />
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/64510f5e-71d1-4f11-bb45-7779470422e3" />
+<img width="953" alt="image" src="https://github.com/user-attachments/assets/1a13d065-5e24-47bf-9c31-77442475e119" />
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/76231701-3ad5-4d6c-a83f-0ec9a38dce75" />
 
-![Screenshot1](Add screenshot 1 here with proper name) Caption explaining what this shows![Screenshot2](Add screenshot 2 here with proper name) Caption explaining what this shows![Screenshot3](Add screenshot 3 here with proper name) Caption explaining what this shows
 
-Diagrams
-
-![Workflow](Add your workflow/architecture diagram here) This diagram represents the workflow from farmer listing to consumer purchase, payment, and delivery.![System Architecture](Add your system architecture diagram here) Explains the backend, frontend, and database interactions.
-
-For Hardware:
-
-Schematic & Circuit
-
-![Circuit](Add your circuit diagram here) Caption explaining connections![Schematic](Add your schematic diagram here) Caption explaining the schematic
 
 Build Photos
 
-![Team](Add photo of your team here)![Components](Add photo of your components here) List out all components shown![Build](Add photos of the build process here) Explain the build steps![Final](Add photo of the final product here) Explain the final build
+![Team](Add photo of your team here)
 
 Project Demo
 
@@ -94,14 +87,4 @@ Video
 
 [Add your demo video link here] Explain what the video demonstrates
 
-Additional Demos
 
-[Add any extra demo materials/links]
-
-Team Contributions
-
-Anaswara M S: [Specific contributions]
-
-Sana Mohammad Sahi: [Specific contributions]
-
-Neha Shaju: [Specific contributions]
