@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 29px;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(27, 62, 4);
+}
+
+header {
+    background-color: rgba(16, 156, 16, 0.788);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    color: #1b5e0a;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: rgb(4, 82, 67);
+    text-decoration: none;
+}
+
+.search-bar {
+    text-align: center;
+    padding: 20px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.categories {
+    text-align: center;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.category{
+    text-align: center;
+    width: 100%;
+    height: 750px;
+}
+
+.category-image{
+    text-align: center;
+    width: 65%;
+    height:250px
+}
+
+.filter-btn {
+    padding: 25px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #0d7526;
+    color: rgba(148, 214, 72, 0.927);
+    border-radius: 5px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.product {
+    background-color: rgba(222, 231, 218, 0.023);
+    width: 165px;
+    margin: 45px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.product img {
+    width: 165px;
+    height: 120px;
+}
+
+button {
+    background-color: #2cb94dec;
+    color: rgb(5, 82, 34);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b9f2b;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(17, 123, 21, 0.8);
+}
+.checkout-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(50, 197, 84, 0.731);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary li {
+    padding: 5px;
+    border-bottom: 1px solid #4ce33e9d;
+}
+
+.logo img {
+    width: 120px; /* Adjust size */
+    height: auto;
+}

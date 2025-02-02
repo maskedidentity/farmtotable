@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Farm to Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Farm-To-Table Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkout-container">
+        <h2>Checkout</h2>
+        
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <ul id="order-list"></ul>
+        </div>
+
+        <!-- Buyer Details Form -->
+        <form id="checkout-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+            <br>
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" required></textarea>
+            <br>
+            <button type="submit">Place Order</button>
+        </form>
+
+        <p id="confirmation-message" style="display: none;">Thank you for your order! We'll deliver soon.</p>
+    </section>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

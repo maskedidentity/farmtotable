@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm to Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Farm to Table Logo">
+        </div>
+    </header>
+    
+    <header>
+        <div class="logo">Farm-To-Table</div>
+            <script>
+                const loggedInUser = localStorage.getItem("loggedInUser");
+                if (loggedInUser) {
+                    document.getElementById("login-link").style.display = "none";
+                    document.getElementById("logout-button").style.display = "inline-block";
+                }
+            
+                document.getElementById("logout-button").addEventListener("click", function () {
+                    localStorage.removeItem("loggedInUser");
+                    alert("Logged out successfully!");
+                    window.location.href = "index.html";
+                });
+            </script>
+           <nav>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li><a href="#" id="logout-button" style="display: none;">Logout</a></li>
+            </ul>
+            </nav>
+    </header>
+    <section class="categories">
+        <div class="category">
+            <h2>Fruits</h2>
+            <img class="category-image" src="images/fruits.jpg" alt="Fruits">
+            <div class="product-list">
+                <div class="product" data-id="1">
+                    <img src="images/apple.jpg" alt="Apple">
+                    <h3>Apple</h3>
+                    <p>$1.00</p>
+                    <button onclick="addToCart(1, 'Apple', 1.00)">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2">
+                    <img src="images/banana.jpg" alt="Banana">
+                    <h3>Banana</h3>
+                    <p>$0.50</p>
+                    <button onclick="addToCart(2, 'Banana', 0.50)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Vegetables</h2>
+            <img class="category-image" src="images/vegg.jpg" alt="Vegetables">
+            <div class="product-list">
+                <div class="product" data-id="3">
+                    <img src="images/carrot.jpg" alt="Carrot">
+                    <h3>Carrot</h3>
+                    <p>$0.80</p>
+                    <button onclick="addToCart(3, 'Carrot', 0.80)">Add to Cart</button>
+                </div>
+                <div class="product" data-id="4">
+                    <img src="images/broccoli.jpg" alt="Broccoli">
+                    <h3>Broccoli</h3>
+                    <p>$1.20</p>
+                    <button onclick="addToCart(4, 'Broccoli', 1.20)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Fish</h2>
+            <img class="category-image" src="images/fish.jpg" alt="Fish">
+            <div class="product-list">
+                <div class="product" data-id="5">
+                    <img src="images/salmon.jpg" alt="Salmon">
+                    <h3>Salmon</h3>
+                    <p>$5.00</p>
+                    <button onclick="addToCart(5, 'Salmon', 5.00)">Add to Cart</button>
+                </div>
+                <div class="product" data-id="6">
+                    <img src="images/tuna.jpg" alt="Tuna">
+                    <h3>Tuna</h3>
+                    <p>$3.50</p>
+                    <button onclick="addToCart(6, 'Tuna', 3.50)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products..." onkeyup="searchProducts()">
+    </section>
+
+    <section class="categories">
+        <button class="filter-btn" onclick="filterProducts('all')">All</button>
+        <button class="filter-btn" onclick="filterProducts('fruits')">Fruits</button>
+        <button class="filter-btn" onclick="filterProducts('vegetables')">Vegetables</button>
+        <button class="filter-btn" onclick="filterProducts('fish')">Fish</button>
+    </section>
+
+    <section class="product-list" id="product-list">
+        <!-- Products dynamically added by JavaScript -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Farm to Table</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

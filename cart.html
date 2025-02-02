@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Farm-To-Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Farm-To-Table</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+    <section class="cart-list">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+    </section>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        document.getElementById("cart-items").innerHTML = cart.map(item =>
+            `<p>${item.name} - $${item.price.toFixed(2)}</p>`).join("");
+    </script>
+</body>
+</html>
